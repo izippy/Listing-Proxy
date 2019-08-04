@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require('express');
 const httpProxy = require('http-proxy');
 const apiProxy = httpProxy.createProxyServer();
@@ -11,9 +12,9 @@ const serverListing = 'http://localhost:3005/';
 const app = express();
 const port = 3009;
 const bodyParser = require('body-parser');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 app.use(express.json());
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use('/:listingID', express.static('./public/dist'));
 
 app.get('/listing/bundle.js', (req, res) => {
