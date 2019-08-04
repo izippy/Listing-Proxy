@@ -12,10 +12,13 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "newrelic": "^5.11.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "k6": "k6 run script.js"
   },
   "repository": {
     "type": "git",
