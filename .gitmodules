@@ -1,0 +1,9 @@
+[submodule "Reservations"]
+	path = Reservations
+	url = https://github.com/izippy/Reservations.git
+[submodule "PhotoCarousel"]
+	path = PhotoCarousel
+	url = https://github.com/izippy/PhotoCarousel.git
+[submodule "Listing"]
+	path = Listing
+	url = https://github.com/izippy/Listing.git
